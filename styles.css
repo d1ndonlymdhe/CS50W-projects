@@ -1,0 +1,65 @@
+body{
+    background-color: cornflowerblue;
+    box-sizing: border-box;   /* screen can't be scrolled */
+}
+
+div {
+    /* border: 1px solid black; */
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}   
+
+
+#menu {
+    width: 80%;
+    margin-bottom: 100px;
+    text-align: right;
+    padding: 30px;
+}
+
+span {
+    padding: 20px;
+}
+
+a {color: black;}
+a:hover {color: white;}
+
+#text {
+    padding: 15px;
+    padding-left: 60px;
+    font-size: large;
+    width: 10cm;
+    border-radius: 5cm;
+    margin-bottom: 5px;
+}
+
+.butn {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(171, 195, 240);
+    border: none;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.butn:hover {
+    border: 1px solid white;
+}
+
+.s-type {
+	position:relative;
+	bottom:25px;
+	left:110px;           /* this div is 100px left and 25px over (inside) its parent, */
+    width: 70%; 
+}
+
+#srch-icon > img {width: 20px;}
+.icons {
+    position: relative;
+    left: -200px;
+    top: -90px;
+    pointer-events: none;
+}

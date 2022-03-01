@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            #fpw {
+                width: 17.5cm;
+                text-align: left;
+                color: wheat;
+                font-size: larger;
+                text-decoration: underline;
+            }
+            #container {
+                /* background-color: white; */
+                display: grid;
+                grid-template-columns: 40% 50%;
+                width: 20cm;
+            }
+
+            #container div {
+                color: wheat;
+                /* border: 1px solid black; */
+                text-align: left;
+            }
+
+            #container div input {
+                border-radius: 5px;
+                font-family: Arial;
+                font-size: 15px;
+            }
+
+            .advanced {
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="margin-bottom: 50px;" id="menu">
+            <span><a href="index.html">Search</a></span>
+            <span><a href="image-search.html">Image Search</a></span>
+        </div>
+        <div>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png">
+            <div class="s-type">Advanced</div>
+        </div>
+
+        <div id="fpw">Find pages with</div>
+        <div id="container">
+            <div>
+                <label for="adv1">all these words:</label> <br> 
+                <label for="adv2">this exact word or phrase: </label> <br>
+                <label for="adv3">any of these words:</label> <br>
+                <label for="adv4"> none of these words:</label> <br> 
+            </div>
+            <div>
+                <form action="https://www.google.com/search"></form>
+                    
+                    <input type="text" id="adv1" class="advanced" name="p"> <br>
+                    <input type="text" id="adv2" class="advanced" name="p"> <br>
+                    <input type="text" id="adv3" class="advanced" name="p"> <br>
+                    <input type="text" id="adv4" class="advanced" name="p"> <br>
+            </div>
+        </div>
+        <div>
+                 <!-- submit -->
+                    <input type="submit" class="butn" value="Advanced Search">
+                </form>
+        </div>
+    
+
+        
+        
+    </body>
+</html>
+
