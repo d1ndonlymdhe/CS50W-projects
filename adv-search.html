@@ -23,6 +23,7 @@
             #container div {
                 color: wheat;
                 /* border: 1px solid black; */
+                width:100vw;
                 text-align: left;
             }
 
@@ -34,6 +35,9 @@
 
             .advanced {
                 width: 400px;
+            }
+            input{
+                width: 100%;
             }
         </style>
     </head>
@@ -49,14 +53,14 @@
 
         <div id="fpw">Find pages with</div>
         <div id="container">
-            <div>
+            <div style="width:100%">
                 <label for="adv1">all these words:</label> <br> 
                 <label for="adv2">this exact word or phrase: </label> <br>
                 <label for="adv3">any of these words:</label> <br>
                 <label for="adv4"> none of these words:</label> <br> 
             </div>
-            <div>
-                <form action="https://www.google.com/search"></form>
+            <div style="width:100%">
+                <form action="https://www.google.com/search" style="width:100%"></form>
                     
                     <input type="text" id="adv1" class="advanced" name="p"> <br>
                     <input type="text" id="adv2" class="advanced" name="p"> <br>
@@ -66,7 +70,8 @@
         </div>
         <div>
                  <!-- submit -->
-                    <input type="submit" class="butn" value="Advanced Search">
+                    <button type="submit" class="butn" value="Advanced Search">Advanced Search</button>
+
                 </form>
         </div>
     
